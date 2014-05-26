@@ -62,6 +62,15 @@ while turn <= 9
     puts "O WINS!"
     puts "GAME OVER"
     exit
+
+  elsif
+    #Check all three rows, if they are all NOT .empty?, then puts "Tie!"
+    board[0].any? { |space| space.empty? } == false &&
+    board[1].any? { |space| space.empty? } == false &&
+    board[2].any? { |space| space.empty? } == false
+    puts "It's a TIE!"
+    puts "GAME OVER"
+    exit
   end
 
 
