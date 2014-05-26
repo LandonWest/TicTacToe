@@ -30,6 +30,7 @@ while turn <= 9
   end
 
   if
+    #POSSIBLE "X" WINS:
     #horizontal wins
     board[0][0].eql?("X") && board[0][1].eql?("X") && board[0][2].eql?("X") ||
     board[1][0].eql?("X") && board[1][1].eql?("X") && board[1][2].eql?("X") ||
@@ -46,6 +47,7 @@ while turn <= 9
     exit
 
   elsif
+    #POSSIBLE "O" WINS:
     #horizontal wins
     board[0][0].eql?("O") && board[0][1].eql?("O") && board[0][2].eql?("O") ||
     board[1][0].eql?("O") && board[1][1].eql?("O") && board[1][2].eql?("O") ||
@@ -66,10 +68,3 @@ while turn <= 9
   turn += 1
 
 end
-
-
-#the following lines are not finished, you need to enter in all of the possibilites for "x" winning, then all the possibilities for "O" winning.
-
-# if board[0][0].eql?("X") and board[0][1].eql?("X") and board[0][2].eql("X") or....
-# puts "X wins!"
-# exit()
